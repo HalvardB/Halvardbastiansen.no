@@ -5,6 +5,17 @@ body {
   max-width: 960px;
   margin-left: auto;
   margin-right: auto;
+  width:100%;
+  height:100%;
+}
+
+.tekst {
+  color: grey;
+  text-align: center;
+  line-height: 30px;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .bilde {
@@ -17,6 +28,24 @@ body {
   display: block;
   margin-top: 40px;
 }
+
+.overskrift {
+  margin-top: 50px;
+}
+
+.sitat {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 2.5rem;
+  line-height: normal;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.forfatter {
+  font-style: italic;
+}
+
 
 h1 {
   text-align: center;
@@ -80,4 +109,186 @@ li {
 
 .prosjekt-kol2 {
   float: right;
+}
+
+.skjul {
+  display: none;
+}
+
+.vis {
+  display: block;
+}
+
+.knapp {
+  background-color: #012634;
+  border: 2px solid #b6b6b6;
+  color: #b6b6b6;
+  padding: 15px 32px;
+  text-align: center;
+  display: block;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+.marginTable {
+  margin
+}
+
+.dot {
+  background-color: #b6b6b6;
+  border-radius: 4px;
+  width: 150px;
+  height: 150px;
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  padding: 1.75em;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: 0.2s ease;
+  background-size: 100px 100px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.dot:hover {
+  background-color: #b6b6b6;
+  background-image: url(img/o.svg);
+  border-radius: 4px;
+  width: 150px;
+  height: 150px;
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  padding: 1.75em;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: 0.2s ease;
+  background-size: 100px 100px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.dots{
+  display:inline-block;
+  background-color: #FFA000;
+  background-image: url(img/o.svg);
+  height:100px;
+  width:100px;
+  float: left;
+  border: 10px solid #333;
+  background-size: 100px 100px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 1.75em;
+}
+
+.dotsHuman{
+  display:inline-block;
+  background-color: #FFA000;
+  background-image: url(img/o.svg);
+  background-size: 100px 100px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 1.75em;
+}
+
+.dots2{
+  display:inline-block;
+  height:100px;
+  width:100px;
+  float: right;
+  border: 10px solid #333;
+  background-color: #3688C3;
+  background-image: url(img/x.svg);
+  background-size: 100px 100px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 1.75em;
+}
+
+.dots2Computer{
+  display:inline-block;
+  background-color: #3688C3;
+  background-image: url(img/x.svg);
+  background-size: 100px 100px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 1.75em;
+}
+
+.guys{
+  height: 100px;
+  max-width: 450px;
+  margin-top: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  position:absolute;
+
+  height:100px;
+  width:400px;
+  top:200px;
+  left:50%;
+  margin-left:-175px;
+}
+
+td {
+  background-color: #b6b6b6;
+  border-radius: 4px;
+  width: 150px;
+  height: 150px;
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  padding: 1.75em;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: 0.2s ease;
+  background-size: 100px 100px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+}
+
+.gameTitle {
+  text-align: center;
+  font-size: 2rem;
+  color: #b6b6b6;
+  margin-top: 30px;
+}
+
+#buttons {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#utdanningKnapp {
+  box-sizing: border-box;
+  display: inline-block;
+  margin-right: 12px;
+  line-height: 25px;
+  margin-top: 20px;
+  margin-bottom: 6px;
+  font-size: 1rem;
+}
+
+#spillKnapp {
+  box-sizing: border-box;
+	display: inline-block;
+	margin-right: 12px;
+	line-height: 25px;
+	margin-top: 20px;
+	margin-bottom: 6px;
+	font-size: 1rem;
 }

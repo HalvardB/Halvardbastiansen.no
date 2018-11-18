@@ -1,33 +1,56 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Halvard's CV</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <img class="bilde" src="Bilder/Halvard.jpg" alt="Halvard Bastiansen's CV">
+
+<head>
+  <meta charset="utf-8">
+  <title>Halvard's CV</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div id="about">
+    <img class="bilde" src="img/Halvard.jpg" alt="Halvard Bastiansen's CV">
     <h1>Halvard Bastiansen</h1>
 
-    <div class="rad">
+    <div id="tekstVanlig" class="tekst">
+      <p class="overskrift">Favorit sitater:</p>
+      <p id="sitat" class="sitat">"Done is better than perfect"</p>
+      <p id="forfatter" class="forfatter">Sheryl Sandberg</p>
+    </div>
+
+    <div id="tekstOpptak" class="skjul">
+      <p class="overskrift">Favorit sitat:</p>
+      <p id="sitat" class="sitat">"Done is better than perfect"</p>
+      <p id="forfatter" class="forfatter">Sheryl Sandberg</p>
+    </div>
+
+    <div id="buttons">
+      <button id="utdanningKnapp" type="button" class="knapp" name="button">Vis CV</button>
+      <button id="spillKnapp" type="button" class="knapp" name="button">3 på rad</button>
+    </div>
+
+    <div>
+      <button id="opptakKnapp" type="button" class="knapp" name="button">Opptak</button>
+    </div>
+
+    <div id="om" class="skjul">
       <div class="kolonne">
         <h3>Kort om meg</h3>
         <p>Gründer og selvlært fullstack utvikler. Hvis du har noen gode ideer og er på utkikk etter en JavaScript utvikler, så kan vi gjerne ta en kaffe :)</p>
-        <br>
-        <p>Favorit sitat: "Done is better than perfect." </p>
       </div>
 
       <div class="kolonne kolonne2">
         <h3>Viktig informasjon</h3>
         <ul>
           <li>Portefølje: <a href="https://www.github.com/HalvardB">GitHub</a></li>
-          <li>Telefon: 99 99 99 99</li>
-          <li>Epost: halvard@eksempel.no</li>
+          <li>Telefon: 482 58 248</li>
+          <li>Epost: halvard@utvikler.io</li>
         </ul>
       </div>
     </div>
 
-    <div class="margin">
+    <div id="cv" class="skjul">
       <h2>Arbeidserfaring</h2>
       <div class="prosjekt">
         <div class="prosjekt-kol1">
@@ -55,7 +78,7 @@
         </div>
         <div class="prosjekt-kol2">
           <p class="prosjekt-tittel">Gründer av Nettbasertekurs.no</p>
-          <p>En kursportal med over 100 nettkurs.</p>
+          <p>Norges største kursportal for nettkurs med over 100 nettkurs.</p>
         </div>
       </div>
 
@@ -64,13 +87,15 @@
           <p class="prosjekt-tittel">April 14 - Mai 2016</p>
         </div>
         <div class="prosjekt-kol2 group">
-          <p class="prosjekt-tittel">Selger og salgssjef i Accountor</p>
+          <p class="prosjekt-tittel">Salgskonsulent i Accountor</p>
           <p>Salg av regnskapstjenester til SMB.</p>
         </div>
       </div>
     </div>
 
-    <div class="margin">
+
+
+    <div class="margin skjul" id="utdanning">
       <h2>Utdanning</h2>
       <div class="prosjekt">
         <div class="prosjekt-kol1">
@@ -81,5 +106,38 @@
         </div>
       </div>
     </div>
-  </body>
+  </div>
+
+  <div id="game" class="skjul">
+    <h1 class="gameTitle"> Klarer du vinne mot Halvard's robot?</h1>
+    <table>
+       <tr>
+         <td class = "dot" id = "0"></td>
+         <td class = "dot" id = "1"></td>
+         <td class = "dot" id = "2"></td>
+       </tr>
+       <tr>
+         <td class = "dot" id = "3"></td>
+         <td class = "dot" id = "4"></td>
+         <td class = "dot" id = "5"></td>
+       </tr>
+       <tr>
+         <td class = "dot" id = "6"></td>
+         <td class = "dot" id = "7"></td>
+         <td class = "dot" id = "8"></td>
+       </tr>
+     </table>
+     <div>
+       <button id="tilbakeKnapp" type="button" class="knapp" name="button">Tilbake</button>
+     </div>
+  </div>
+
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src="quotes.js"></script>
+  <script type="text/javascript" src="index.js"></script>
+</body>
+
 </html>
