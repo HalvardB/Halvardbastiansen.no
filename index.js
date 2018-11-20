@@ -50,19 +50,6 @@ tilbakeKnapp.addEventListener("click", function tilbake(){
   cvTrykk = false;
 });
 
-
-// Slettes etter opptak
-const opptakKnapp = document.getElementById("opptakKnapp");
-const tekstOpptak = document.getElementById("tekstOpptak");
-const tekstVanlig = document.getElementById("tekstVanlig");
-
-opptakKnapp.addEventListener("click", function opptak(){
-  tekstOpptak.className = "tekst";
-  tekstVanlig.className = "skjul";
-  buttons.className = "skjul";
-  opptakKnapp.className = "skjul";
-});
-
 // Random quote generator
 function getRandomQuote(){
   quoteId = Math.floor(Math.random() * quotes.length);
